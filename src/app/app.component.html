@@ -1,0 +1,3 @@
+<h1>Country Information</h1>
+<app-country-list [countries]="countries" (countrySelected)="onCountrySelected($event)"></app-country-list>
+<app-country-detail *ngIf="selectedCountry" [country]="selectedCountry"></app-country-detail>
